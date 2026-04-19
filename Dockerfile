@@ -9,10 +9,10 @@ COPY server.js ./
 
 RUN mkdir -p data projects tmp
 
-EXPOSE 3000
+EXPOSE 3001
 
-ENV PORT=3000 \
-    ADMIN_PASSWORD=admin \
-    SESSION_SECRET=""
+ENV PORT=3001 \
+    ADMIN_PASSWORD=Phdq861064 \
+    SESSION_SECRET="admin"
 
 CMD ["node", "server.js"]
