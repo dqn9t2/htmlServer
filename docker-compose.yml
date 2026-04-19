@@ -5,11 +5,11 @@ services:
     container_name: htmlserver
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
-      - PORT=3000
-      - ADMIN_PASSWORD=changeme
-      - SESSION_SECRET=replace-with-a-long-random-string
+      - PORT=3001
+      - ADMIN_PASSWORD=Phdq861064
+      - SESSION_SECRET=admin
     volumes:
       - htmlserver_data:/app/data
       - htmlserver_projects:/app/projects
